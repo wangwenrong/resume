@@ -1,0 +1,41 @@
+@import '../main.less';
+.task-main{
+    height: @width;
+    width: @width;
+    ul{
+        padding: .1rem;
+        li{
+            height: .8rem;
+            line-height: .8rem;
+            width: 100%;
+            .flex;
+            .flex-items;
+            .flex-center;
+            i{
+                display: block;
+                line-height: .8rem;
+                width: 6%;
+                svg{
+                    margin-top:.28rem;
+                }
+            }
+            .task-main-list-item{
+                width: 94%;
+                .flex;
+                p.task-main-list-item-text{
+                   width: 85%;
+                   height: 100%;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                   white-space: nowrap;
+                }
+                span.task-main-list-item-date{
+                    width: 15%;
+                    color: #ddd;
+                    font-size: .2rem;
+                }
+
+            }
+        }
+    }
+}

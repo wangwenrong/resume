@@ -1,0 +1,82 @@
+html,body,div,span,ul,li,input,button,textarea,h2,h3,h4,h1,u,i,p,a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+html{
+    position: relative;
+    .WH;
+}
+body{
+    .WH;
+}
+@bodyColor:rgb(66,133,244);
+@width:100%;
+.WH{
+    height: @width;
+    width: @width;
+}
+.TRBL{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.bodyFontSize{
+    font-size: 0.3rem;
+}
+html,body{
+    .bodyFontSize;
+}
+.flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flex-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; 
+}
+.flexOne{
+-webkit-box-flex:1;
+-ms-flex:1;
+flex:1;
+}
+.flex-content{
+-webkit-box-pack: center; 
+-moz-box-pack: center; 
+-ms-flex-pack: center; 
+-webkit-justify-content: center;
+justify-content: center;//水平居中
+}
+.flex-items{
+    align-items:center;
+}
+.bordered{
+    border:1px solid #ddd;
+}
+.border-radius (@radius: 5px) {
+    border-radius: @radius;
+}
+.pad(@top,@right,@bottom,@left) {
+    padding:@arguments;
+  }
+.marg(@top,@right,@bottom,@left){
+    margin:@arguments;
+}
+.enrich{
+    .flexOne;
+}
+#app{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

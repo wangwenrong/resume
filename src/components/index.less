@@ -1,0 +1,96 @@
+@import '../main.less';
+.Header{
+    height: 1rem;
+    .topInfo{
+        height: 100%;
+        p{
+            line-height: 1rem;
+            color: #fff;
+            font-size: .4rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+    }
+    .in{
+        position: absolute;
+        .TRBL;
+        z-index: 9;
+        div{
+            height: 1rem;
+            line-height: 1rem;
+        }
+        .back{
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            .flex;
+            .flex-center;
+            .flex-content;
+        }
+        .right{
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.popup{
+    width: @width;
+    height: @width;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all,0.6s;
+    .InputTex{
+        .bodyFontSize;
+        width: @width * 0.8;
+        position: absolute;
+        top: @width / 2;
+        left: @width / 2;
+        transform: translate(-50%,-50%);
+        background:#fff;
+        padding: 0.3rem;
+        box-sizing: border-box;
+        border-radius: 0.08rem;
+        z-index: 100;
+        textarea{
+            width: @width;
+            padding: 0.1rem 0.1rem;
+            box-sizing: border-box;
+            height: auto;
+            min-height: 0.8rem;
+            line-height: 0.4rem;
+            border: 0;
+            background: #fff;
+            border: 0.01rem solid #ddd;
+            border-radius: 0.05rem;
+        }
+        .inputIcon{
+            margin: 0.2rem 0;
+        }
+        .buttonOk{
+            width: @width;
+            height: 0.8rem;
+            background: @bodyColor;
+            color: #fff;
+            .bodyFontSize;
+            border: 0;
+            border-radius: 0.4rem;
+            line-height: 0.8rem;
+            text-align: center;
+        }
+    }
+}
